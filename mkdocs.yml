@@ -1,0 +1,81 @@
+site_name: Casette's Home
+site_url: https://miraitowaves.github.io
+repo_name: Casette's Home
+repo_url: https://github.com/miraitowaves/miraitowaves.github.io
+
+theme:
+  name: material # 主题名称
+
+  ## 更改颜色
+  palette:
+    - media: "(prefers-color-scheme)"
+      scheme: default # 对于每个scheme设置它的参数（primary，accent，toggle等），组块的前面有“—”符号
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # 对于每个scheme设置它的参数（primary，accent，toggle等），组块的前面有“—”符号
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  
+  ## 更改字体
+  font: false
+
+  ## 更改语言
+  language: zh
+  extra:
+    alternate:
+      - name: English
+        link: /en/
+        lang: en
+  
+  ## 更改徽标和图标
+  logo: assets/logo.png
+  favicon: images/favicon.png
+
+  extra:
+    homepage: https://miraitowaves.github.io/
+    
+  ## 确保数据隐私
+  ## 还不会用呜呜呜
+  
+  ## 设置导航
+  features:
+    -navigation.instant
+    -navigation.instant.prefetch
+    -navigation.instant.prefetch
+    -navigation.tracking
+    -navigation.tabs
+    -navigation.tabs.sticky
+    -navigation.sections
+    -navigation.expand
+    -navigation.path
+    -navigation.indexes
+    -navigation.top
+
+
+## 显示创建时间和修改时间
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+
+  
+
+
+
+
+
+
