@@ -62,16 +62,11 @@ theme:
   
   ## 设置导航
   features:
-    -navigation.instant
-    -navigation.instant.prefetch
-    -navigation.instant.prefetch
     -navigation.tracking
     -navigation.tabs
-    -navigation.tabs.sticky
     -navigation.sections
     -navigation.expand
     -navigation.path
-    -navigation.indexes
     -navigation.top
 
 
