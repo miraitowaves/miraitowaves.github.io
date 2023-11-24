@@ -53,21 +53,17 @@ theme:
   ## 更改徽标和图标
   ##logo: assets/logo.png
   ##favicon: images/favicon.png 
-
-  extra:
-    homepage: https://miraitowaves.github.io/
     
   ## 确保数据隐私
   ## 还不会用呜呜呜
   
   ## 设置导航
   features:
-    -navigation.tracking
     -navigation.tabs
-    -navigation.sections
-    -navigation.expand
-    -navigation.path
+    -navigation.tracking
+    -navigation.indexes
     -navigation.top
+    -toc.follow
 
 
 ## 显示创建时间和修改时间
