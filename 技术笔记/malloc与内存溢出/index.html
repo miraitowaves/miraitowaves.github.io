@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://miraitowaves.github.io/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">
+        <link rel="canonical" href="https://miraitowaves.github.io/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/malloc%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA/">
       
       
-        <link rel="prev" href="../%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/malloc%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA/">
+        <link rel="prev" href="../">
       
       
+        <link rel="next" href="../../%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">
       
-      <link rel="icon" href="../images/favicon.png">
+      
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.10">
     
     
       
-        <title>前言 - Casette's Home</title>
+        <title>malloc与内存溢出 - Casette's Home</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fad675c6.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -40,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#malloc" class="md-skip">
           跳转至
         </a>
       
@@ -85,9 +87,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href=".." title="Casette&#39;s Home" class="md-header__button md-logo" aria-label="Casette's Home" data-md-component="logo">
+    <a href="../.." title="Casette&#39;s Home" class="md-header__button md-logo" aria-label="Casette's Home" data-md-component="logo">
       
-  <img src="../assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              前言
+              malloc与内存溢出
             
           </span>
         </div>
@@ -175,7 +177,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -190,11 +192,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -210,13 +214,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/" class="md-tabs__link">
           
   
     
@@ -257,9 +259,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Casette&#39;s Home" class="md-nav__button md-logo" aria-label="Casette's Home" data-md-component="logo">
+    <a href="../.." title="Casette&#39;s Home" class="md-nav__button md-logo" aria-label="Casette's Home" data-md-component="logo">
       
-  <img src="../assets/logo.png" alt="logo">
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     Casette's Home
@@ -285,7 +287,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -302,6 +304,8 @@
       
   
   
+    
+  
   
     
     
@@ -319,19 +323,17 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -348,7 +350,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             技术笔记
@@ -361,9 +363,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/malloc%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    malloc与内存溢出
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -372,6 +394,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C语言内存分配情况
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      堆区的特点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      栈区的特点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      我遇到的问题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -388,8 +475,6 @@
       
   
   
-    
-  
   
     
     
@@ -405,17 +490,19 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -427,7 +514,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             课程学习
@@ -463,6 +550,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C语言内存分配情况
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      堆区的特点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      栈区的特点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      我遇到的问题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -479,22 +619,51 @@
   
 
 
-<h1 id="_1">前言</h1>
-<p>在这里，存放着我所学习的一些课程的课程笔记。</p>
-<p>因为自己比较喜欢用纸和笔来写笔记，所以这一块可能不太全。</p>
-<p>原本想写一些关于浙大课程的学习笔记，但看到已经有许多的同学写了很多优质的笔记，个人觉得已经没有必要了。</p>
-<p>之后有时间的话，会更新有关CS61C、CS162、CS144、MIT的6.null、CMU 15-445、MIT 6.824以及MIT 6.031等课程的学习笔记！</p>
+<h1 id="malloc">malloc与内存溢出</h1>
+<h2 id="c">C语言内存分配情况</h2>
+<ol>
+<li>程序区：用于存储程序的代码，也就是程序的二进制码</li>
+<li>静态存储区：用于存储全局变量和静态变量，这些变量的空间在程序编译时就已经分配好了</li>
+<li>动态存储区：用于在程序执行时分配的内存，分为堆区(heap)和栈区(stack)。</li>
+</ol>
+<blockquote>
+<p>堆区</p>
+<p>用于动态内存分配，程序运行时由内存分配函数在堆上分配内存</p>
+<p>栈区</p>
+<p>在函数执行时，函数内部的局部变量和函数参数的存储单元的内存区域
+函数运行结束时，这些内存区域会自动释放</p>
+</blockquote>
+<h2 id="_1">堆区的特点</h2>
+<p>堆区的最大存储量，按照网上的说法，<strong>受限于计算机系统中有效的虚拟内存</strong>。</p>
+<p>比方说，32位系统下，堆内存可以达到2.9G的大小（几乎占满3G的用户空间）</p>
+<p>堆是由C/C++函数库提供的，为了分配一块内存，库函数会按照一定的算法，在堆内存中搜索可用的足够大小的空间。</p>
+<p>对于堆来讲，频繁的malloc/free势必会造成内存空间的不连续，从而造成大量的碎片，使程序效率降低。对于栈就不会存在这个问题。</p>
+<h2 id="_2">栈区的特点</h2>
+<p>栈是机器系统提供的数据结构，计算机会在底层对栈提供支持：分配专门的寄存器存放栈的地址，压栈出栈都有专门的指令执行，这就决定了栈的效率比较高。</p>
+<p>但栈区容量较小，一般在MB的数量级。有些编译器也可以主动设置，来获得更多的栈区容量。</p>
+<h2 id="_3">我遇到的问题</h2>
+<p>在进行图像信息处理的时候，我采用了malloc，来获得存储图像信息数据的指针的内存空间。malloc的空间差不多在<span class="arithmatex">\(2000 \times 2000 \times 4\)</span> Byte的大小，进行2次的malloc后程序就会运行出错。</p>
+<p>更具体的情况是：在debug时，仍然能够正确生成最终的图像；但在生成exe文件，进行run后，却会因为堆区的内存被过分占用而导致程序崩溃。</p>
+<p>个人认为的原因是：<strong>在debug时，程序并未被编译器和链接器进行优化，对申请的内存并未做出限制；然而在生成exe文件并run之时，就会因为程序在申请内存时候的不达标而造成程序无法运行。</strong></p>
+<p>一些总结</p>
+<ul>
+<li>以我当前的知识，无法运用好C语言在malloc对较大数据集的处理，老老实实定义静态的大数组来处理数据吧！</li>
+<li>在寻找这个错误的时候，定位的时候画了一定的时间，但是如果保持模块化的代码思路，对不同模块进行查证的话，效率会提高不少。<strong>模块化的写代码的思路和能力要坚持锻炼！</strong>
+<img alt="Alt text" src="../image.png" /></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<p><a href="https://sp21.datastructur.es/materials/guides/style-guide.html">代码风格指南-CS61B</a></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 23, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2023</span>
       
         <br>
         创建日期:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 23, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2023</span>
       
     
   </small>
@@ -543,12 +712,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": "-navigation.instant -navigation.instant.prefetch -navigation.instant.prefetch -navigation.tracking -navigation.tabs -navigation.tabs.sticky -navigation.sections -navigation.expand -navigation.path -navigation.indexes -navigation.top", "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": "-navigation.instant -navigation.instant.prefetch -navigation.instant.prefetch -navigation.tracking -navigation.tabs -navigation.tabs.sticky -navigation.sections -navigation.expand -navigation.path -navigation.indexes -navigation.top", "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.6c14ae12.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c14ae12.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
