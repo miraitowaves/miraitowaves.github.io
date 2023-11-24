@@ -1,3 +1,12 @@
+nav:
+  - 主页: 
+    - index.md
+  - 技术笔记:
+    - tech/00.md
+    - malloc与内存溢出: tech/01.md
+  - 课程学习: 
+    - course/00.md
+
 site_name: Casette's Home
 site_url: https://miraitowaves.github.io
 repo_name: Casette's Home
@@ -42,8 +51,8 @@ theme:
         lang: en
   
   ## 更改徽标和图标
-  logo: assets/logo.png
-  favicon: images/favicon.png
+  ##logo: assets/logo.png
+  ##favicon: images/favicon.png 
 
   extra:
     homepage: https://miraitowaves.github.io/
@@ -70,6 +79,8 @@ theme:
 plugins:
   - git-revision-date-localized:
       enable_creation_date: true
+  - search:
+      separator: '[\s\u200b\-]'
 
 ## MathJax关于数学公式的显示
 markdown_extensions:
