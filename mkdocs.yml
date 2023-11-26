@@ -4,6 +4,7 @@ nav:
   - 技术笔记:
     - tech/前言.md
     - malloc与内存溢出: tech/malloc与内存溢出.md
+    - 加速上传git的小技巧: tech/加速上传git的小技巧.md
   - 课程学习: 
     - course/前言.md
     - 概率论与数理统计: 
