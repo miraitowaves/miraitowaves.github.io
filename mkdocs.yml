@@ -22,22 +22,22 @@ theme:
   palette:
     - media: "(prefers-color-scheme)"
       scheme: default # 对于每个scheme设置它的参数（primary，accent，toggle等），组块的前面有“—”符号
-      primary: indigo
-      accent: indigo
+      primary: light green
+      accent: light green
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default # 对于每个scheme设置它的参数（primary，accent，toggle等），组块的前面有“—”符号
-      primary: indigo
-      accent: indigo
+      primary: light green
+      accent: light green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: light green
+      accent: light green
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
