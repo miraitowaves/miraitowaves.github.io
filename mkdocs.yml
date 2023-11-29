@@ -7,8 +7,6 @@ nav:
     - 加速上传git的小技巧: tech/加速上传git的小技巧.md
   - 课程学习: 
     - course/前言.md
-    - 概率论与数理统计: 
-      - 第五章-大数定律与中心极限定理: course/概率论与数理统计/05.md
 
 site_name: Casette's Home
 site_url: https://miraitowaves.github.io
