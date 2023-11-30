@@ -12,6 +12,7 @@ site_name: Casette's Home
 site_url: https://miraitowaves.github.io
 repo_name: Casette's Home
 repo_url: https://github.com/miraitowaves/miraitowaves.github.io
+copyright: Copyright &copy; 2023 <a href="https://github.com/miraitowaves"  target="_blank" rel="noopener">Casette</a>
 
 theme:
   name: material # 主题名称
