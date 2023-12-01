@@ -7,6 +7,8 @@ nav:
     - 加速上传git的小技巧: tech/加速上传git的小技巧.md
   - 课程学习: 
     - course/前言.md
+    - 概率论与数理统计:
+      - course/概率论与数理统计/统计量与抽样分布.md
 
 site_name: Casette's Home
 site_url: https://miraitowaves.github.io
