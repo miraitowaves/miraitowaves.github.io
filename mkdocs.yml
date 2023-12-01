@@ -9,6 +9,10 @@ nav:
     - course/前言.md
     - 概率论与数理统计:
       - course/概率论与数理统计/统计量与抽样分布.md
+    - 数据结构基础:
+      - 图论:
+        - 最大流问题: course/数据结构基础/最大流问题.md
+        - 拓扑排序: course/数据结构基础/拓扑排序.md
 
 site_name: Casette's Home
 site_url: https://miraitowaves.github.io
