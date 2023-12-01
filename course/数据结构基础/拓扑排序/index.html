@@ -8,28 +8,26 @@
       
       
       
-        <link rel="canonical" href="https://miraitowaves.github.io/tech/malloc%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA/">
+        <link rel="canonical" href="https://miraitowaves.github.io/course/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/">
       
       
-        <link rel="prev" href="../%E5%89%8D%E8%A8%80/">
+        <link rel="prev" href="../%E6%9C%80%E5%A4%A7%E6%B5%81%E9%97%AE%E9%A2%98/">
       
       
-        <link rel="next" href="../%E5%8A%A0%E9%80%9F%E4%B8%8A%E4%BC%A0git%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/">
       
-      
-      <link rel="icon" href="../../logo-modified.png">
+      <link rel="icon" href="../../../logo-modified.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
     
     
       
-        <title>malloc与内存溢出 - Casette's Home</title>
+        <title>拓扑排序 - Casette's Home</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fad675c6.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.fad675c6.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -42,7 +40,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#malloc" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -85,9 +83,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="Casette&#39;s Home" class="md-header__button md-logo" aria-label="Casette's Home" data-md-component="logo">
+    <a href="../../.." title="Casette&#39;s Home" class="md-header__button md-logo" aria-label="Casette's Home" data-md-component="logo">
       
-  <img src="../../logo-modified.png" alt="logo">
+  <img src="../../../logo-modified.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              malloc与内存溢出
+              拓扑排序
             
           </span>
         </div>
@@ -220,12 +218,32 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href="../../.." class="md-tabs__link">
           
   
     
   
   主页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tech/%E5%89%8D%E8%A8%80/" class="md-tabs__link">
+          
+  
+    
+  
+  技术笔记
 
         </a>
       </li>
@@ -242,27 +260,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../%E5%89%8D%E8%A8%80/" class="md-tabs__link">
-          
-  
-    
-  
-  技术笔记
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../course/%E5%89%8D%E8%A8%80/" class="md-tabs__link">
+        <a href="../../%E5%89%8D%E8%A8%80/" class="md-tabs__link">
           
   
     
@@ -297,9 +295,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Casette&#39;s Home" class="md-nav__button md-logo" aria-label="Casette's Home" data-md-component="logo">
+    <a href="../../.." title="Casette&#39;s Home" class="md-nav__button md-logo" aria-label="Casette's Home" data-md-component="logo">
       
-  <img src="../../logo-modified.png" alt="logo">
+  <img src="../../../logo-modified.png" alt="logo">
 
     </a>
     Casette's Home
@@ -349,7 +347,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../.." class="md-nav__link ">
+            <a href="../../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -368,6 +366,124 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    技术笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            技术笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/%E5%89%8D%E8%A8%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/malloc%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    malloc与内存溢出
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/%E5%8A%A0%E9%80%9F%E4%B8%8A%E4%BC%A0git%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    加速上传git的小技巧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -406,210 +522,7 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    技术笔记
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            技术笔记
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%89%8D%E8%A8%80/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    前言
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    malloc与内存溢出
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    malloc与内存溢出
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#c" class="md-nav__link">
-    <span class="md-ellipsis">
-      C语言内存分配情况
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      堆区的特点
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      栈区的特点
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      我遇到的问题
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%8A%A0%E9%80%9F%E4%B8%8A%E4%BC%A0git%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    加速上传git的小技巧
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -623,7 +536,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             课程学习
@@ -637,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course/%E5%89%8D%E8%A8%80/" class="md-nav__link">
+      <a href="../../%E5%89%8D%E8%A8%80/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -699,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E7%BB%9F%E8%AE%A1%E9%87%8F%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83/" class="md-nav__link">
+      <a href="../../%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E7%BB%9F%E8%AE%A1%E9%87%8F%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -725,8 +638,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -736,12 +651,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -755,7 +670,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             数据结构基础
@@ -766,8 +681,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -779,12 +696,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
@@ -798,7 +715,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3_1">
             <span class="md-nav__icon md-icon"></span>
             图论
@@ -812,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/%E6%9C%80%E5%A4%A7%E6%B5%81%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../%E6%9C%80%E5%A4%A7%E6%B5%81%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -830,10 +747,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../course/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    拓扑排序
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -842,6 +779,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题描述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zjk" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZJK老师提供的算法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      另一种算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="另一种算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      总体思路
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      实现代码
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      另一种算法的思路分析和正确性验证
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -897,27 +914,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#c" class="md-nav__link">
-    <span class="md-ellipsis">
-      C语言内存分配情况
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      堆区的特点
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      栈区的特点
+      问题描述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zjk" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZJK老师提供的算法
     </span>
   </a>
   
@@ -926,16 +934,40 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      我遇到的问题
+      另一种算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="另一种算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      总体思路
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      实现代码
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      Reference
+      另一种算法的思路分析和正确性验证
     </span>
   </a>
   
@@ -959,51 +991,155 @@
   
 
 
-<h1 id="malloc">malloc与内存溢出</h1>
-<h2 id="c">C语言内存分配情况</h2>
-<ol>
-<li>程序区：用于存储程序的代码，也就是程序的二进制码</li>
-<li>静态存储区：用于存储全局变量和静态变量，这些变量的空间在程序编译时就已经分配好了</li>
-<li>动态存储区：用于在程序执行时分配的内存，分为堆区(heap)和栈区(stack)。</li>
-</ol>
-<blockquote>
-<p>堆区</p>
-<p>用于动态内存分配，程序运行时由内存分配函数在堆上分配内存</p>
-<p>栈区</p>
-<p>在函数执行时，函数内部的局部变量和函数参数的存储单元的内存区域
-函数运行结束时，这些内存区域会自动释放</p>
-</blockquote>
-<h2 id="_1">堆区的特点</h2>
-<p>堆区的最大存储量，按照网上的说法，<strong>受限于计算机系统中有效的虚拟内存</strong>。</p>
-<p>比方说，32位系统下，堆内存可以达到2.9G的大小（几乎占满3G的用户空间）</p>
-<p>堆是由C/C++函数库提供的，为了分配一块内存，库函数会按照一定的算法，在堆内存中搜索可用的足够大小的空间。</p>
-<p>对于堆来讲，频繁的malloc/free势必会造成内存空间的不连续，从而造成大量的碎片，使程序效率降低。对于栈就不会存在这个问题。</p>
-<h2 id="_2">栈区的特点</h2>
-<p>栈是机器系统提供的数据结构，计算机会在底层对栈提供支持：分配专门的寄存器存放栈的地址，压栈出栈都有专门的指令执行，这就决定了栈的效率比较高。</p>
-<p>但栈区容量较小，一般在MB的数量级。有些编译器也可以主动设置，来获得更多的栈区容量。</p>
-<h2 id="_3">我遇到的问题</h2>
-<p>在进行图像信息处理的时候，我采用了malloc，来获得存储图像信息数据的指针的内存空间。malloc的空间差不多在<span class="arithmatex">\(2000 \times 2000 \times 4\)</span> Byte的大小，进行2次的malloc后程序就会运行出错。</p>
-<p>更具体的情况是：在debug时，仍然能够正确生成最终的图像；但在生成exe文件，进行run后，却会因为堆区的内存被过分占用而导致程序崩溃。</p>
-<p>个人认为的原因是：<strong>在debug时，程序并未被编译器和链接器进行优化，对申请的内存并未做出限制；然而在生成exe文件并run之时，就会因为程序在申请内存时候的不达标而造成程序无法运行。</strong></p>
-<p>一些总结</p>
+<h1 id="_1">拓扑排序</h1>
+<h2 id="_2">问题描述</h2>
+<hr />
+<p>Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge u-v, vertex u comes before v in the ordering.</p>
+<h2 id="zjk">ZJK老师提供的算法</h2>
+<p>关键的特征：<strong>入度</strong></p>
+<p>在当前情况下，对于任何入度为0的节点，都可以直接被压入我们的拓扑排序所构建的队列。</p>
+<p>我们还要明确有向无环图的性质：</p>
 <ul>
-<li>以我当前的知识，无法运用好C语言在malloc对较大数据集的处理，老老实实定义静态的大数组来处理数据吧！</li>
-<li>在寻找这个错误的时候，定位的时候画了一定的时间，但是如果保持模块化的代码思路，对不同模块进行查证的话，效率会提高不少。<strong>模块化的写代码的思路和能力要坚持锻炼！</strong>
+<li>对于任意一个有向无环图，都存在至少一个节点，它的入度为0（解决本问题的关键性质，性质的证明可以用反证法）
 <img alt="Alt text" src="../image.png" /></li>
 </ul>
-<h2 id="reference">Reference</h2>
-<p><a href="https://sp21.datastructur.es/materials/guides/style-guide.html">代码风格指南-CS61B</a></p>
+<h2 id="_3">另一种算法</h2>
+<hr />
+<h3 id="_4">总体思路</h3>
+<p><img alt="Alt text" src="../image-1.png" /></p>
+<h3 id="_5">实现代码</h3>
+<pre><code class="language-c++">// A C++ program to print topological
+// sorting of a DAG
+#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+// Class to represent a graph
+class Graph {
+    // No. of vertices'
+    int V;
+
+    // Pointer to an array containing adjacency listsList
+    list&lt;int&gt;* adj;
+
+    // A function used by topologicalSort
+    void topologicalSortUtil(int v, bool visited[],
+                            stack&lt;int&gt;&amp; Stack);
+
+public:
+    // Constructor
+    Graph(int V);
+
+    // function to add an edge to graph
+    void addEdge(int v, int w);
+
+    // prints a Topological Sort of
+    // the complete graph
+    void topologicalSort();
+};
+
+Graph::Graph(int V)
+{
+    this-&gt;V = V;
+    adj = new list&lt;int&gt;[V];
+}
+
+void Graph::addEdge(int v, int w)
+{
+    // Add w to v’s list.
+    adj[v].push_back(w);
+}
+
+// A recursive function used by topologicalSort
+void Graph::topologicalSortUtil(int v, bool visited[],
+                                stack&lt;int&gt;&amp; Stack)
+{
+    // Mark the current node as visited.
+    visited[v] = true;
+
+    // Recur for all the vertices
+    // adjacent to this vertex
+    list&lt;int&gt;::iterator i;
+    for (i = adj[v].begin(); i != adj[v].end(); ++i)
+        if (!visited[*i])
+            topologicalSortUtil(*i, visited, Stack);
+
+    // Push current vertex to stack
+    // which stores result
+    Stack.push(v);
+}
+
+// The function to do Topological Sort.
+// It uses recursive topologicalSortUtil()
+void Graph::topologicalSort()
+{
+    stack&lt;int&gt; Stack;
+
+    // Mark all the vertices as not visited
+    bool* visited = new bool[V];
+    for (int i = 0; i &lt; V; i++)
+        visited[i] = false;
+
+    // Call the recursive helper function
+    // to store Topological
+    // Sort starting from all
+    // vertices one by one
+    for (int i = 0; i &lt; V; i++)
+        if (visited[i] == false)
+            topologicalSortUtil(i, visited, Stack);
+
+    // Print contents of stack
+    while (Stack.empty() == false) {
+        cout &lt;&lt; Stack.top() &lt;&lt; &quot; &quot;;
+        Stack.pop();
+    }
+
+    delete[] visited;
+}
+
+// Driver Code
+int main()
+{
+    // Create a graph given in the above diagram
+    Graph g(6);
+    g.addEdge(5, 2);
+    g.addEdge(5, 0);
+    g.addEdge(4, 0);
+    g.addEdge(4, 1);
+    g.addEdge(2, 3);
+    g.addEdge(3, 1);
+
+    cout &lt;&lt; &quot;Following is a Topological Sort of the given &quot;
+            &quot;graph \n&quot;;
+
+    // Function Call
+    g.topologicalSort();
+
+    return 0;
+}
+</code></pre>
+<h2 id="_6">另一种算法的思路分析和正确性验证</h2>
+<p>对于两个节点，我们定义三种关系：（因为是有向无环图，所以不存在两个节点同时具备两个特征）
+- A前B后
+- A后B前
+- 两者无关联</p>
+<p><strong>为什么我们从visit数组依次进行操作就行了？</strong>
+- 比方说，对于节点0，进行上述算法的操作，最终产生了一个具备一定节点数量的栈，这个栈中的所有节点满足：所有在这个节点之后的节点都比这个节点先压入了栈
+- 接下来，从剩下的尚未被压入栈的节点中任取一个节点，那么这个节点和被压入栈的所有的节点的关系为：要么在这个节点之前，要么两者无关联（这一点说明两者的压栈顺序是任意的），所以一定可以执行压栈的操作</p>
+<p><strong>很巧妙的思路，有利于我们设计算法和理解递归的作用</strong></p>
+<p>上课所学的算法，则采用了另一个思路，当然同样也是维护了<strong>一个栈</strong>，更关键的是维护了一个<strong>数组，记录各个节点的入度</strong></p>
+<p>我们采用topNum数组来记录各个节点对应的topsort的顺序，比方说，对于节点0 top[0] = 2, 节点3 top[3] = 2, 说明两者在top排序中是“相当的“，由此产生了多样的top的节点顺序</p>
+<p>再回到我们上课谈到的算法，我们压栈的关键衡量信息是：如果入度为0，那么就把他压入栈，否则；然后再出栈，对于每个出栈的节点，标记其为visit为true，并且除去这个节点，同时减少相邻节点的入度（<strong>由此产生了新的indegree为0的节点</strong>），再进行上述循环，直至栈最终为空</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 26, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 1, 2023</span>
       
         <br>
         创建日期:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 1, 2023</span>
       
     
   </small>
@@ -1056,12 +1192,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": "-navigation.tabs -navigation.tracking -navigation.indexes -navigation.top -toc.follow", "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": "-navigation.tabs -navigation.tracking -navigation.indexes -navigation.top -toc.follow", "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

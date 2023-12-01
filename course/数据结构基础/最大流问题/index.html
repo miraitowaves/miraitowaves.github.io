@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://miraitowaves.github.io/tech/malloc%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA/">
+        <link rel="canonical" href="https://miraitowaves.github.io/course/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/%E6%9C%80%E5%A4%A7%E6%B5%81%E9%97%AE%E9%A2%98/">
       
       
-        <link rel="prev" href="../%E5%89%8D%E8%A8%80/">
+        <link rel="prev" href="../../%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E7%BB%9F%E8%AE%A1%E9%87%8F%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83/">
       
       
-        <link rel="next" href="../%E5%8A%A0%E9%80%9F%E4%B8%8A%E4%BC%A0git%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/">
+        <link rel="next" href="../%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/">
       
       
-      <link rel="icon" href="../../logo-modified.png">
+      <link rel="icon" href="../../../logo-modified.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
     
     
       
-        <title>malloc与内存溢出 - Casette's Home</title>
+        <title>最大流问题 - Casette's Home</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fad675c6.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.fad675c6.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -42,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#malloc" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -85,9 +85,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="Casette&#39;s Home" class="md-header__button md-logo" aria-label="Casette's Home" data-md-component="logo">
+    <a href="../../.." title="Casette&#39;s Home" class="md-header__button md-logo" aria-label="Casette's Home" data-md-component="logo">
       
-  <img src="../../logo-modified.png" alt="logo">
+  <img src="../../../logo-modified.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              malloc与内存溢出
+              最大流问题
             
           </span>
         </div>
@@ -220,12 +220,32 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href="../../.." class="md-tabs__link">
           
   
     
   
   主页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tech/%E5%89%8D%E8%A8%80/" class="md-tabs__link">
+          
+  
+    
+  
+  技术笔记
 
         </a>
       </li>
@@ -242,27 +262,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../%E5%89%8D%E8%A8%80/" class="md-tabs__link">
-          
-  
-    
-  
-  技术笔记
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../course/%E5%89%8D%E8%A8%80/" class="md-tabs__link">
+        <a href="../../%E5%89%8D%E8%A8%80/" class="md-tabs__link">
           
   
     
@@ -297,9 +297,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Casette&#39;s Home" class="md-nav__button md-logo" aria-label="Casette's Home" data-md-component="logo">
+    <a href="../../.." title="Casette&#39;s Home" class="md-nav__button md-logo" aria-label="Casette's Home" data-md-component="logo">
       
-  <img src="../../logo-modified.png" alt="logo">
+  <img src="../../../logo-modified.png" alt="logo">
 
     </a>
     Casette's Home
@@ -349,7 +349,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../.." class="md-nav__link ">
+            <a href="../../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -368,6 +368,124 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    技术笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            技术笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/%E5%89%8D%E8%A8%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/malloc%E4%B8%8E%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    malloc与内存溢出
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/%E5%8A%A0%E9%80%9F%E4%B8%8A%E4%BC%A0git%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    加速上传git的小技巧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -406,210 +524,7 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    技术笔记
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            技术笔记
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%89%8D%E8%A8%80/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    前言
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    malloc与内存溢出
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    malloc与内存溢出
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#c" class="md-nav__link">
-    <span class="md-ellipsis">
-      C语言内存分配情况
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      堆区的特点
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      栈区的特点
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      我遇到的问题
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%8A%A0%E9%80%9F%E4%B8%8A%E4%BC%A0git%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    加速上传git的小技巧
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -623,7 +538,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             课程学习
@@ -637,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course/%E5%89%8D%E8%A8%80/" class="md-nav__link">
+      <a href="../../%E5%89%8D%E8%A8%80/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -699,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E7%BB%9F%E8%AE%A1%E9%87%8F%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83/" class="md-nav__link">
+      <a href="../../%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E7%BB%9F%E8%AE%A1%E9%87%8F%E4%B8%8E%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -725,8 +640,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -736,12 +653,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -755,7 +672,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             数据结构基础
@@ -766,8 +683,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -779,12 +698,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
@@ -798,7 +717,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3_1">
             <span class="md-nav__icon md-icon"></span>
             图论
@@ -809,10 +728,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../course/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/%E6%9C%80%E5%A4%A7%E6%B5%81%E9%97%AE%E9%A2%98/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    最大流问题
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -821,6 +760,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题描述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ford-fulkerson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ford-Fulkerson算法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ford-fulkerson_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ford-Fulkerson算法思路分析和证明
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -833,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../course/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/" class="md-nav__link">
+      <a href="../%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -897,36 +892,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#c" class="md-nav__link">
-    <span class="md-ellipsis">
-      C语言内存分配情况
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      堆区的特点
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      栈区的特点
+      问题描述
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#ford-fulkerson" class="md-nav__link">
     <span class="md-ellipsis">
-      我遇到的问题
+      Ford-Fulkerson算法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ford-fulkerson_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ford-Fulkerson算法思路分析和证明
     </span>
   </a>
   
@@ -959,51 +945,151 @@
   
 
 
-<h1 id="malloc">malloc与内存溢出</h1>
-<h2 id="c">C语言内存分配情况</h2>
-<ol>
-<li>程序区：用于存储程序的代码，也就是程序的二进制码</li>
-<li>静态存储区：用于存储全局变量和静态变量，这些变量的空间在程序编译时就已经分配好了</li>
-<li>动态存储区：用于在程序执行时分配的内存，分为堆区(heap)和栈区(stack)。</li>
-</ol>
-<blockquote>
-<p>堆区</p>
-<p>用于动态内存分配，程序运行时由内存分配函数在堆上分配内存</p>
-<p>栈区</p>
-<p>在函数执行时，函数内部的局部变量和函数参数的存储单元的内存区域
-函数运行结束时，这些内存区域会自动释放</p>
-</blockquote>
-<h2 id="_1">堆区的特点</h2>
-<p>堆区的最大存储量，按照网上的说法，<strong>受限于计算机系统中有效的虚拟内存</strong>。</p>
-<p>比方说，32位系统下，堆内存可以达到2.9G的大小（几乎占满3G的用户空间）</p>
-<p>堆是由C/C++函数库提供的，为了分配一块内存，库函数会按照一定的算法，在堆内存中搜索可用的足够大小的空间。</p>
-<p>对于堆来讲，频繁的malloc/free势必会造成内存空间的不连续，从而造成大量的碎片，使程序效率降低。对于栈就不会存在这个问题。</p>
-<h2 id="_2">栈区的特点</h2>
-<p>栈是机器系统提供的数据结构，计算机会在底层对栈提供支持：分配专门的寄存器存放栈的地址，压栈出栈都有专门的指令执行，这就决定了栈的效率比较高。</p>
-<p>但栈区容量较小，一般在MB的数量级。有些编译器也可以主动设置，来获得更多的栈区容量。</p>
-<h2 id="_3">我遇到的问题</h2>
-<p>在进行图像信息处理的时候，我采用了malloc，来获得存储图像信息数据的指针的内存空间。malloc的空间差不多在<span class="arithmatex">\(2000 \times 2000 \times 4\)</span> Byte的大小，进行2次的malloc后程序就会运行出错。</p>
-<p>更具体的情况是：在debug时，仍然能够正确生成最终的图像；但在生成exe文件，进行run后，却会因为堆区的内存被过分占用而导致程序崩溃。</p>
-<p>个人认为的原因是：<strong>在debug时，程序并未被编译器和链接器进行优化，对申请的内存并未做出限制；然而在生成exe文件并run之时，就会因为程序在申请内存时候的不达标而造成程序无法运行。</strong></p>
-<p>一些总结</p>
-<ul>
-<li>以我当前的知识，无法运用好C语言在malloc对较大数据集的处理，老老实实定义静态的大数组来处理数据吧！</li>
-<li>在寻找这个错误的时候，定位的时候画了一定的时间，但是如果保持模块化的代码思路，对不同模块进行查证的话，效率会提高不少。<strong>模块化的写代码的思路和能力要坚持锻炼！</strong>
-<img alt="Alt text" src="../image.png" /></li>
-</ul>
+<h1 id="_1">最大流问题</h1>
+<h2 id="_2">问题描述</h2>
+<hr />
+<p>最大流量问题是图论中的一个经典最佳化问题，它涉及到在容量限制的条件下，寻找可以通过管道、渠道或其他途径的网络发送的最大流量。这个问题可以用来模拟各种各样的实际情况，例如交通系统、通信网络和资源分配。</p>
+<p>在最大流问题中，我们有一个有向图，其中有一个源节点 s 和一个汇节点 t，每个边都有一个容量，表示可以通过它发送的最大流量。目标是找到从 s 到 t 可以发送的最大流量，同时尊重边上的容量约束。</p>
+<h2 id="ford-fulkerson">Ford-Fulkerson算法</h2>
+<hr />
+<p>流量网络的残差图是一个表示附加可能流量的图。如果残差图中存在从源到汇的路径，则可以添加流。残差图的每个边都有一个称为残差容量的值，该值等于边的原始容量减去当前流量。剩余容量基本上就是边的当前容量。</p>
+<pre><code class="language-c++">// C++ program for implementation of Ford Fulkerson
+// algorithm
+#include &lt;iostream&gt;
+#include &lt;limits.h&gt;
+#include &lt;queue&gt;
+#include &lt;string.h&gt;
+using namespace std;
+
+// Number of vertices in given graph
+#define V 6
+
+/* Returns true if there is a path from source 's' to sink
+'t' in residual graph. Also fills parent[] to store the
+path */
+bool bfs(int rGraph[V][V], int s, int t, int parent[])
+{
+    // Create a visited array and mark all vertices as not
+    // visited
+    bool visited[V];
+    memset(visited, 0, sizeof(visited));
+
+    // Create a queue, enqueue source vertex and mark source
+    // vertex as visited
+    queue&lt;int&gt; q;
+    q.push(s);
+    visited[s] = true;
+    parent[s] = -1;
+
+    // Standard BFS Loop
+    while (!q.empty()) {
+        int u = q.front();
+        q.pop();
+
+        for (int v = 0; v &lt; V; v++) {
+            if (visited[v] == false &amp;&amp; rGraph[u][v] &gt; 0) {
+                // If we find a connection to the sink node,
+                // then there is no point in BFS anymore We
+                // just have to set its parent and can return
+                // true
+                if (v == t) {
+                    parent[v] = u;
+                    return true;
+                }
+                q.push(v);
+                parent[v] = u;
+                visited[v] = true;
+            }
+        }
+    }
+
+    // We didn't reach sink in BFS starting from source, so
+    // return false
+    return false;
+}
+
+// Returns the maximum flow from s to t in the given graph
+int fordFulkerson(int graph[V][V], int s, int t)
+{
+    int u, v;
+
+    // Create a residual graph and fill the residual graph
+    // with given capacities in the original graph as
+    // residual capacities in residual graph
+    int rGraph[V]
+            [V]; // Residual graph where rGraph[i][j]
+                // indicates residual capacity of edge
+                // from i to j (if there is an edge. If
+                // rGraph[i][j] is 0, then there is not)
+    for (u = 0; u &lt; V; u++)
+        for (v = 0; v &lt; V; v++)
+            rGraph[u][v] = graph[u][v];
+
+    int parent[V]; // This array is filled by BFS and to
+                // store path
+
+    int max_flow = 0; // There is no flow initially
+
+    // Augment the flow while there is path from source to
+    // sink
+    while (bfs(rGraph, s, t, parent)) {
+        // Find minimum residual capacity of the edges along
+        // the path filled by BFS. Or we can say find the
+        // maximum flow through the path found.
+        int path_flow = INT_MAX;
+        for (v = t; v != s; v = parent[v]) {
+            u = parent[v];
+            path_flow = min(path_flow, rGraph[u][v]);
+        }
+
+        // update residual capacities of the edges and
+        // reverse edges along the path
+        for (v = t; v != s; v = parent[v]) {
+            u = parent[v];
+            rGraph[u][v] -= path_flow;
+            rGraph[v][u] += path_flow;
+        }
+
+        // Add path flow to overall flow
+        max_flow += path_flow;
+    }
+
+    // Return the overall flow
+    return max_flow;
+}
+
+// Driver program to test above functions
+int main()
+{
+    // Let us create a graph shown in the above example
+    int graph[V][V]
+        = { { 0, 16, 13, 0, 0, 0 }, { 0, 0, 10, 12, 0, 0 },
+            { 0, 4, 0, 0, 14, 0 }, { 0, 0, 9, 0, 0, 20 },
+            { 0, 0, 0, 7, 0, 4 }, { 0, 0, 0, 0, 0, 0 } };
+
+    cout &lt;&lt; &quot;The maximum possible flow is &quot;
+        &lt;&lt; fordFulkerson(graph, 0, 5);
+
+    return 0;
+}
+
+</code></pre>
+<h2 id="ford-fulkerson_1">Ford-Fulkerson算法思路分析和证明</h2>
+<hr />
+<p>好吧，这个太难了，我证不明白😣</p>
 <h2 id="reference">Reference</h2>
-<p><a href="https://sp21.datastructur.es/materials/guides/style-guide.html">代码风格指南-CS61B</a></p>
+<p>https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/【神网站！】</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 26, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 1, 2023</span>
       
         <br>
         创建日期:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 1, 2023</span>
       
     
   </small>
@@ -1056,12 +1142,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": "-navigation.tabs -navigation.tracking -navigation.indexes -navigation.top -toc.follow", "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": "-navigation.tabs -navigation.tracking -navigation.indexes -navigation.top -toc.follow", "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
