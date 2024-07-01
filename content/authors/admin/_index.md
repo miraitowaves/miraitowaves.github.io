@@ -3,10 +3,10 @@
 title: 方星皓
 
 # Name pronunciation (optional)
-name_pronunciation: Xing Hao Fang
+name_pronunciation: Xinghao Fang
 
 # Full name (for SEO)
-first_name: Xing Hao
+first_name: Xinghao
 last_name: Fang
 
 # Status emoji
@@ -28,7 +28,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:3220103487@zju.edu.cn'
+    url: 'mailto:casette@zju.edu.cn'
     label: E-mail Me
   # - icon: brands/x
   #   url: https://twitter.com/GetResearchDev
@@ -43,7 +43,7 @@ education:
   - area: B.E. in Computer Science and Technology
     institution: Zhejiang University
     date_start: 2022-09-01
-    date_end: 2026-06-30
+    # date_end: 2026-06-30
     # summary: |
     #   Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     # button:
@@ -142,9 +142,16 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: National Merit Scholarship
-    date: '2023-10-01'
+  - title: Government Scholarship, National Scholarship
+    date: '2023-10-20'
     awarder: ministry of education
+    summary: |
+      During the 2022-2023 academic year, I ranked within the top 1% of my cohort (4/343 students), earning recognition for outstanding academic achievement and contributions to social work, extracurricular activities, practical skills, innovation and entrepreneurship.
+  - title: University Scholarship, First-class Scholarship
+    date: '2023-10-23'
+    awarder: Zhejiang University
+    # summary: |
+    #   During the 2022-2023 academic year, I ranked within the top 1% of my cohort (4/343 students), earning recognition for outstanding academic achievement and contributions to social work, extracurricular activities, practical skills, innovation and entrepreneurship.
   # - title: Blockchain Fundamentals
   #   url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
   #   date: '2023-07-01'
