@@ -73,14 +73,14 @@ education:
 skills:
   - name: Technical Skills
     items:
-      - name: C/C++
-        description: ''
-        percent: 100
-        icon: devicon/cplusplus
-      - name: Java
-        description: ''
-        percent: 100
-        icon: devicon/java
+      # - name: C/C++
+      #   description: ''
+      #   percent: 100
+      #   icon: devicon/cplusplus
+      # - name: Java
+      #   description: ''
+      #   percent: 100
+      #   icon: devicon/java
       - name: Python
         description: ''
         percent: 100
