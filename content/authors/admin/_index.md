@@ -6,8 +6,8 @@ title: 方星皓
 name_pronunciation: Xing Hao Fang
 
 # Full name (for SEO)
-first_name: Xing Hao
-last_name:  Fang
+first_name: Fang
+last_name:  Xing Hao
 
 # Status emoji
 status:
@@ -68,55 +68,47 @@ education:
 #       - lorem ipsum dolor sit amet, consectetur adipiscing elit
 #       - lorem ipsum dolor sit amet, consectetur adipiscing elit
 
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      # - name: C/C++
-      #   description: ''
-      #   percent: 100
-      #   icon: devicon/cplusplus
-      # - name: Java
-      #   description: ''
-      #   percent: 100
-      #   icon: devicon/java
-      - name: Python
-        description: ''
-        percent: 100
-        icon: devicon/python
-      # - name: RStudio
-      #   description: ''
-      #   percent: 100
-      #   icon: devicon/rstudio
-      # - name: PyTorch
-      #   description: ''
-      #   percent: 40
-      #   icon: devicon/pytorch
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
+# # Skills
+# # Add your own SVG icons to `assets/media/icons/`
+# skills:
+#   - name: Technical Skills
+#     items:
+#       - name: C/C++
+#         description: ''
+#         percent: 100
+#         icon: devicon/cplusplus
+#       # - name: RStudio
+#       #   description: ''
+#       #   percent: 100
+#       #   icon: devicon/rstudio
+#       # - name: PyTorch
+#       #   description: ''
+#       #   percent: 40
+#       #   icon: devicon/pytorch
+#   - name: Hobbies
+#     color: '#eeac02'
+#     color_border: '#f0bf23'
+#     items:
+#       - name: Hiking
+#         description: ''
+#         percent: 60
+#         icon: person-simple-walk
+#       - name: Cats
+#         description: ''
+#         percent: 100
+#         icon: cat
+#       - name: Photography
+#         description: ''
+#         percent: 80
+#         icon: camera
 
-languages:
-  - name: English
-    percent: 75
-  - name: Chinese
-    percent: 100
-  - name: Japanese
-    percent: 50
+# languages:
+#   - name: English
+#     percent: 100
+#   - name: Chinese
+#     percent: 75
+#   - name: Portuguese
+#     percent: 25
 
 # Awards.
 #   Add/remove as many awards below as you like.
