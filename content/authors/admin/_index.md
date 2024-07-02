@@ -83,12 +83,12 @@ work:
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: 
-    company_name: X
+  - position: MiniSQL
+    company_name: Zhejiang University Database Systems course
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2024-05-01
+    date_end: 2024-06-20
     summary: |
       Developed key database engine components, including:
       - Disk and Buffer Pool Management: Implemented a complete disk and buffer pool management module, including bonus features for enhanced performance.
