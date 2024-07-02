@@ -72,17 +72,17 @@ education:
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: MiniSQL
-    company_name: "Database Systems" course at Zhejiang University
+  - position: Director of Cloud Infrastructure
+    company_name: GenCoin
     company_url: ''
     company_logo: ''
-    date_start: 2024-05-01
-    date_end: 2024-06-20
-    summary: | 2-
-      Developed key database engine components, including:
-      - Disk and Buffer Pool Management: Implemented a complete disk and buffer pool management module, including bonus features for enhanced performance.
-      - B+ Tree Indexing: Designed and implemented B+ tree data pages (BPlusTreePage, BPlusTreeInternalPage) within the Index Manager, enabling efficient data indexing and retrieval.
-      - Recovery Management: Developed the entire Recovery Manager module, ensuring data integrity and crash recovery capabilities for the database system.
+    date_start: 2021-01-01
+    date_end: ''
+    summary: |2-
+      Responsibilities include:
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
   - position: Backend Software Engineer
     company_name: X
     company_url: ''
