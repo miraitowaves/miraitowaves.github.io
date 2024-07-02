@@ -144,7 +144,7 @@ languages:
 awards:
   - title: Government Scholarship, National Scholarship
     date: '2023-10-20'
-    awarder: ministry of education
+    awarder: Ministry of Education
     summary: |
       During the 2022-2023 academic year, I ranked within the top 1% of my cohort (4/343 students), earning recognition for outstanding academic achievement and contributions to social work, extracurricular activities, practical skills, innovation and entrepreneurship.
   - title: University Scholarship, First-class Scholarship
