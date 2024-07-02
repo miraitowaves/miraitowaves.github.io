@@ -72,28 +72,28 @@ education:
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
   #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
+  # - position: Director of Cloud Infrastructure
+  #   company_name: GenCoin
+  #   company_url: ''
+  #   company_logo: ''
+  #   date_start: 2021-01-01
+  #   date_end: ''
+  #   summary: |2-
+  #     Responsibilities include:
+  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - position: 
     company_name: X
     company_url: ''
     company_logo: ''
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Developed key database engine components, including:
+      - Disk and Buffer Pool Management: Implemented a complete disk and buffer pool management module, including bonus features for enhanced performance.
+      - B+ Tree Indexing: Designed and implemented B+ tree data pages (BPlusTreePage, BPlusTreeInternalPage) within the Index Manager, enabling efficient data indexing and retrieval.
+      - Recovery Management: Developed the entire Recovery Manager module, ensuring data integrity and crash recovery capabilities for the database system.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
