@@ -174,4 +174,4 @@ awards:
 
 My name is Xinghao Fang, and I am currently pursuing a Bachelor of Science degree in Computer Science and Technology at Zhejiang University, with an expected graduation date of 2026. My current interests lie in the realms of game development and web development.
 
-I can be reached at "casette@zju.edu.cn" or "miraitowaves@gmail.com". It was a pleasure speaking with you!
+I can be reached at "casette@zju.edu.cn" or "miraitowaves@gmail.com". It's a pleasure speaking with you!
