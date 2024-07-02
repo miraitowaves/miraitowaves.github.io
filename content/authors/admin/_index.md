@@ -78,7 +78,7 @@ work:
     company_logo: ''
     date_start: 2024-05-01
     date_end: 2024-06-20
-    summary: | #2-
+    summary: | 2-
       Developed key database engine components, including:
       - Disk and Buffer Pool Management: Implemented a complete disk and buffer pool management module, including bonus features for enhanced performance.
       - B+ Tree Indexing: Designed and implemented B+ tree data pages (BPlusTreePage, BPlusTreeInternalPage) within the Index Manager, enabling efficient data indexing and retrieval.
