@@ -172,6 +172,6 @@ awards:
   #     Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-My name is Xinghao Fang (方星皓 in Chinese), and I am currently studying for a Bachelor of Science degree in Computer Science and Technology at Zhejiang University, with an expected graduation date of 2026 (potentially longer if I pursue further studies). I have a keen interest in server development.
+My name is Xinghao Fang (方星皓 in Chinese), and I am currently studying for a Bachelor of Science degree in Computer Science and Technology at Zhejiang University, with an expected graduation date of 2026 (potentially longer if I pursue further studies). Now I have a keen interest in CG.
 
 I can be reached at "casette@zju.edu.cn" or "miraitowaves@gmail.com". It’s a pleasure to speak with you!
