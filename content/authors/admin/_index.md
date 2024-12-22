@@ -146,7 +146,7 @@ awards:
     date: '2023-10-20'
     awarder: Ministry of Education
     summary: |
-      During the 2022-2023 academic year, I ranked within the top 1% of my cohort (4/343 students), earning recognition for outstanding academic achievement and contributions to social work, extracurricular activities, practical skills, innovation and entrepreneurship.
+      During the 2022-2023 academic year, I ranked within the top 1% of my cohort in academic performance, earning recognition for outstanding academic achievement and contributions to social work, extracurricular activities, practical skills, innovation and entrepreneurship.
   - title: University Scholarship, First-class Scholarship
     date: '2023-10-23'
     awarder: Zhejiang University
