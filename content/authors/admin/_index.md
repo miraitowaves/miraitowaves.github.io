@@ -42,7 +42,7 @@ profiles:
 education:
   - area: B.E. in Computer Science and Technology
     institution: Zhejiang University
-    date_start: 2022-09
+    date_start: 2022-09-01
     # date_end: 2026-06-30
     # summary: |
     #   Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
@@ -87,8 +87,8 @@ work:
     company_name: Zhejiang University Database Systems course
     company_url: ''
     company_logo: ''
-    date_start: 2024-05
-    date_end: 2024-06
+    date_start: 2024-05-01
+    date_end: 2024-06-30
     summary: |
       Developed key database engine components, including:
       - Disk and Buffer Pool Management: Implemented a complete disk and buffer pool management module, including bonus features for enhanced performance.
@@ -98,8 +98,8 @@ work:
     company_name: Zhejiang University Operating System course
     company_url: ''
     company_logo: ''
-    date_start: 2024-10
-    date_end: 2025-01
+    date_start: 2024-10-01
+    date_end: 2024-12-30
     summary: |
       The design of this small operating system includes the following contents:
       - RV64 kernel boot and clock interrupt handling
