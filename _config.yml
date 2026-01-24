@@ -1,0 +1,58 @@
+# Basic Information 
+title: Xinghao Fang
+position: Undergraduate Student
+# position: M.S. Student
+affiliation: Zhejiang University
+email: casette@zju.edu.cn
+
+# Search Engine Optimization (SEO)
+# The following information is used to improve the website traffic from search engines, e.g., Google.
+keywords: fangxinghao, xinghao fang, zhejiang university, LLMs, Agents, Computer Science and Technology
+description: I am currently an undergraduate student majoring in [Computer Science and Technology](http://www.cs.zju.edu.cn/) at [Zhejiang University](https://www.zju.edu.cn/). I also serve as a research intern at the [DCD Lab](http://www.cs.zju.edu.cn/_upload/article/files/d4/45/e46a2ca6469693738d84d1fffc3f/cc70a9ee-44ce-4603-9e46-701564a0eb2a.pdf), where I am fortunate to be advised by [A.P. Kun Kuang](https://kunkuang.github.io/) and [Professor Fei Wu](https://person.zju.edu.cn/wufei). Prior to joining the university in 2022, I dedicated my primary studies to Mathematical Olympiads, coached by [Mingliang Yang](https://www.hnsd2fz.com/teacher-development/faculty/25).Currently, my research interests center on Large Language Models (LLMs) and Autonomous Agents, with a particular emphasis on Interpretability.
+canonical: https://fangxinghao.github.io/
+
+# Links 
+# If you don't need one of them, you may delete the corresponding line.
+# google_scholar: https://scholar.google.com/
+# cv_link: assets/files/curriculum_vitae.pdf
+github_link: https://github.com/miraitowaves
+# linkedin: https://www.linkedin.com/
+# twitter: https://twitter.com/
+
+# Images (e.g., your profile picture and your website's favicon) 
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
+avatar: ./assets/img/avatar.png
+favicon: ./assets/img/favicon.png
+favicon_dark: ./assets/img/favicon-dark.png
+
+# Footnote
+# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+enable_footnote: true
+
+# Auto Dark Mode
+# You may use the option to disable the automatic dark theme
+auto_dark_mode: true
+
+# Font
+# You can use this option to choose between Serif or Sans Serif fonts.
+font: "Serif" # or "Sans Serif"
+
+# Google Analytics ID
+# Please remove this if you don't use Google Analytics
+google_analytics: UA-111540567-4
+
+# Use this project as a remote theme for GitHub Pages
+# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+remote_theme: yaoyao-liu/minimal-light
+
+# The following files will be removed from the generated website.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - README_zh_Hans.md
+  - README_zh_Hant.md
+  - README_de.md
+  - LICENSE
+  - minimal-light.gemspec
+  - html_source_file/

@@ -1,0 +1,19 @@
+{% if site.data.awards %}
+<h2>Selected Awards</h2>
+
+{% for group in site.data.awards.main %}
+
+<h4 style="margin:0 10px 0;">{{ group[0] }}</h4>
+
+{% if group[1][0].title %}
+<ul style="margin:0 0 5px;">
+  {% for position in group[1] %}
+  <li><a{% if position.link %} href="{{ position.link }}"{% endif %}><autocolor>{{ position.title }}</autocolor></a>{% if position.note %}<strong> <i style="color:#043361">{{ position.note }}</i></strong>{% endif %}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p style="margin:0 0 5px; padding-left:50px;">{{ group[1] }}</p>
+{% endif %}
+
+{% endfor %}
+{% endif %}
