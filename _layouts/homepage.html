@@ -14,6 +14,23 @@
     <link rel="canonical" href="{{ site.canonical }}"/>
     {% endif %}
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.canonical | jsonify }},
+      "jobTitle": {{ site.position | jsonify }},
+      "email": {{ site.email | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": {{ site.affiliation | jsonify }}
+      }{% if site.sameas %},
+      "sameAs": {{ site.sameas | jsonify }}{% endif %}
+    }
+    </script>
+
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>

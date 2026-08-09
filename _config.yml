@@ -8,7 +8,7 @@ email: casette@zju.edu.cn
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: fangxinghao, xinghao fang, zhejiang university, LLMs, Agents, Computer Science and Technology
-description: I am currently an undergraduate student majoring in [Computer Science and Technology](http://www.cs.zju.edu.cn/) at [Zhejiang University](https://www.zju.edu.cn/). I also serve as a research intern at the [DCD Lab](http://www.cs.zju.edu.cn/_upload/article/files/d4/45/e46a2ca6469693738d84d1fffc3f/cc70a9ee-44ce-4603-9e46-701564a0eb2a.pdf), where I am fortunate to be advised by [A.P. Kun Kuang](https://kunkuang.github.io/) and [Professor Fei Wu](https://person.zju.edu.cn/wufei). Prior to joining the university in 2022, I dedicated my primary studies to Mathematical Olympiads, coached by [Mingliang Yang](https://www.hnsd2fz.com/teacher-development/faculty/25).Currently, my research interests center on Large Language Models (LLMs) and Autonomous Agents, with a particular emphasis on Interpretability.
+description: Xinghao Fang is an undergraduate student in Computer Science and Technology at Zhejiang University and a research intern at the DCD Lab, advised by Kun Kuang and Fei Wu. His research centers on large language models, autonomous agents, and interpretability.
 canonical: https://miraitowaves.github.io/
 
 # Links 
@@ -19,6 +19,13 @@ github_link: https://github.com/miraitowaves
 # linkedin: https://www.linkedin.com/
 # twitter: https://twitter.com/
 notebook: https://miraitowaves.github.io/notebook/
+
+# Structured data (schema.org Person)
+# External profiles that represent the same person. Add Google Scholar, ORCID,
+# LinkedIn, etc. here as they become available - each one helps search engines
+# connect this page to you.
+sameas:
+  - https://github.com/miraitowaves
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
@@ -37,10 +44,6 @@ auto_dark_mode: true
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.
 font: "Serif" # or "Sans Serif"
-
-# Google Analytics ID
-# Please remove this if you don't use Google Analytics
-google_analytics: UA-111540567-4
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
