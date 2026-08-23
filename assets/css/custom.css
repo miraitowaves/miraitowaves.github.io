@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------------
+   miraitowaves identity — deep-sea teal accent
+   Loaded after the theme stylesheets; overrides are intentionally
+   narrow (links, avatar, selection) so the minimal-light philosophy
+   stays intact. To change the identity color, edit the four values
+   in each block below.
+   ------------------------------------------------------------------ */
+
+:root {
+  --accent: #0e7490;                 /* deep-sea teal, light mode   */
+  --accent-strong: #155e75;          /* hover, light mode           */
+  --accent-soft: rgba(14, 116, 144, 0.10);  /* avatar disc tint     */
+  --accent-ring: rgba(14, 116, 144, 0.35);  /* avatar ring/selection*/
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #4cc9dd;               /* brighter teal, dark mode    */
+    --accent-strong: #86e0ee;
+    --accent-soft: rgba(76, 201, 221, 0.12);
+    --accent-ring: rgba(76, 201, 221, 0.40);
+  }
+}
+
+/* Content links */
+a { color: var(--accent); }
+a:hover { color: var(--accent-strong); }
+
+/* Social / icon row hover picks up the identity color */
+.social-icons a:hover { color: var(--accent) !important; }
+
+/* Avatar: soft tinted disc + thin ring */
+.image.avatar img {
+  background: var(--accent-soft);
+  box-shadow: 0 0 0 2px var(--accent-ring);
+}
+
+/* Text selection */
+::selection { background: var(--accent-ring); }
