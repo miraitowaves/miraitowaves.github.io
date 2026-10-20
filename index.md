@@ -8,7 +8,7 @@ I am an M.S. student in the [College of Computer Science and Technology](http://
 
 Since September 2026, I have been a research intern at Alibaba Cloud (Aliyun) in Hangzhou. Previously, I was a research intern at Alimama, Taotian Group, in Beijing from March to September 2026.
 
-My research focuses on helping agents learn from large-scale human–agent interaction histories to make reliable decisions in open-ended tasks. I am particularly interested in **agent memory construction**: distilling decision-making experience from implicit interaction data into reusable representations that guide future decisions. This includes efficient memory inference, memory architectures, and adaptive retrieval strategies. I also explore **LLM reasoning enhancement and generalizable learning**, with an emphasis on causal interpretability and generalization across task distributions.
+My research focuses on **agent memory**: learning from human–agent interactions to support reliable decision-making in open-ended tasks. I am also interested in **LLM reasoning and generalization**, with an emphasis on causal interpretability.
 
 Before entering university in 2022, I focused on Mathematical Olympiads under the guidance of [Mingliang Yang](https://www.hnsd2fz.com/teacher-development/faculty/25).
 

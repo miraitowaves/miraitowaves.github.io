@@ -55,9 +55,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <section style="max-width: 900px; margin: 0 auto; float: none;">
-        
-        <div style="text-align: center; margin-bottom: 2rem;">
+      <header>
         {% if site.avatar %}
         <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" style="display: inline-block;" /></a>
         {% endif %}
@@ -115,8 +113,9 @@
         </a>
         {% endif %}
         </div>
-        </div>
+      </header>
 
+      <section>
       {{ content }}
 
       {% include publications.html %}
