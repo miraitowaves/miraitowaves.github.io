@@ -1,14 +1,14 @@
 # Basic Information 
 title: Xinghao Fang
-position: Undergraduate Student
-# position: M.S. Student
+# position: Undergraduate Student
+position: M.S. Student
 affiliation: Zhejiang University
 email: xhfang26@zju.edu.cn
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: fangxinghao, xinghao fang, zhejiang university, LLMs, Agents, Computer Science and Technology
-description: Xinghao Fang is an undergraduate student in Computer Science and Technology at Zhejiang University and a research intern at the DCD Lab, advised by Kun Kuang and Fei Wu. His research centers on large language models, autonomous agents, and interpretability.
+description: Xinghao Fang is an M.S. student at Zhejiang University advised by Kun Kuang and a research intern at Alibaba Cloud. His research focuses on agent memory construction, LLM reasoning enhancement, and generalizable learning.
 canonical: https://miraitowaves.github.io/
 
 # Links 
