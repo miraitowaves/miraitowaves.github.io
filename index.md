@@ -8,7 +8,7 @@ I am an M.S. student in the [College of Computer Science and Technology](http://
 
 Since September 2026, I have been a research intern at [Alibaba Cloud (Aliyun)](https://www.alibabacloud.com/) in Hangzhou. Previously, I was a research intern at [Alimama](https://www.alimama.com/), [Taotian Group](https://talent.taotian.com/), in Beijing from March to September 2026.
 
-My primary research goal is to leverage large-scale human–agent interaction histories to build agents capable of reliable decision-making in open-ended tasks. I am particularly interested in **agent memory construction**, **LLM reasoning enhancement** and **generalization across task distributions**, with an emphasis on causal interpretability.
+My primary research goal is to leverage large-scale human–agent interaction histories to build agents capable of reliable decision-making in open-ended tasks. I am particularly interested in **agent memory construction**, **LLM reasoning enhancement** and **generalization across task distributions**.
 
 Before entering university in 2022, I focused on Mathematical Olympiads under the guidance of [Mingliang Yang](https://www.hnsd2fz.com/teacher-development/faculty/25).
 
