@@ -30,7 +30,7 @@ sameas:
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.jpg?v=2
+avatar: ./assets/img/avatar.jpg?v=3
 favicon: ./assets/img/favicon.png?v=2
 favicon_dark: ./assets/img/favicon-dark.png?v=2
 

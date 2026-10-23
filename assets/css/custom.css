@@ -30,6 +30,12 @@ a:hover { color: var(--accent-strong); }
 /* Text selection */
 ::selection { background: var(--accent-ring); }
 
+.image.avatar img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  clip-path: ellipse(40% 50%) content-box;
+}
+
 .profile-name {
   display: grid;
   width: fit-content;
