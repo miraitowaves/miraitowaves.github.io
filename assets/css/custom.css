@@ -29,3 +29,42 @@ a:hover { color: var(--accent-strong); }
 
 /* Text selection */
 ::selection { background: var(--accent-ring); }
+
+.profile-name {
+  display: grid;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.profile-name > span {
+  grid-area: 1 / 1;
+  align-self: center;
+}
+
+.profile-name-zh {
+  visibility: hidden;
+}
+
+.profile-name:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.profile-name:focus-visible .profile-name-en {
+  visibility: hidden;
+}
+
+.profile-name:focus-visible .profile-name-zh {
+  visibility: visible;
+}
+
+@media (hover: hover) {
+  .profile-name:hover .profile-name-en {
+    visibility: hidden;
+  }
+
+  .profile-name:hover .profile-name-zh {
+    visibility: visible;
+  }
+}

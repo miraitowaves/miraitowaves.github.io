@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <title>{{ site.title }} | {{site.affiliation}}</title>
+    <title>{{ site.name_zh | escape }} {{ site.title | escape }} | {{ site.affiliation | escape }}</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     {% endif %}
-    <link rel="stylesheet" href="./assets/css/custom.css?v=2">
+    <link rel="stylesheet" href="./assets/css/custom.css?v=3">
 
   </head>
   <body>
@@ -60,7 +60,10 @@
         <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" style="display: inline-block;" /></a>
         {% endif %}
 
-        <h1 style="margin-top: 1rem;">{{ site.title }}</h1>
+        <h1 class="profile-name" style="margin-top: 1rem;" tabindex="0" aria-label="{{ site.title | escape }} / {{ site.name_zh | escape }}">
+          <span class="profile-name-en" lang="en" aria-hidden="true">{{ site.title | escape }}</span>
+          <span class="profile-name-zh" lang="zh-CN" aria-hidden="true">{{ site.name_zh | escape }}</span>
+        </h1>
 
         {% if site.position %}
         <position style="font-size:1.10rem;">{{ site.position }}</position>
