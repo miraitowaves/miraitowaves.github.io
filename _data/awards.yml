@@ -1,7 +1,14 @@
 main:
-  - title: National Scholarship.
-    note: Highest honor for undergraduates
-  - title: First-Class Scholarship of Zhejiang University.
+  - title: Outstanding Graduate of Zhejiang University.
+    year: "2026"
   - title: Guo Yilian Education Scholarship.
+    year: "2025"
+  - title: First-Class Scholarship of Zhejiang University.
+    year: "2024"
+    note: Top 3%
+  - title: National Scholarship.
+    year: "2023"
+    note: Highest honor for undergraduates
   - title: Model Student in Academics / Innovation / Arts & Sports / Labor / Leadership of Zhejiang University.
+    year: "2023, 2024, 2025"
     note: One of few students to receive all
