@@ -34,11 +34,13 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .image.avatar { display: block; width: 144.4px; margin: 0 auto 13px; }
 .image.avatar img { display: block; width: 144.4px; padding: 20px; aspect-ratio: 1; object-fit: contain; clip-path: ellipse(40% 50%) content-box; }
 .profile-name { display: grid; width: fit-content; max-width: 100%; margin: 0 auto 20px; color: var(--ink); font: 400 27px / 1.4 var(--serif); letter-spacing: -0.04em; }
-.profile-name > span { grid-area: 1 / 1; align-self: center; }
-.profile-name-zh { visibility: hidden; font-family: "Songti SC", SimSun, serif; letter-spacing: 0.14em; }
-.profile-name:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
-.profile-name:focus-visible .profile-name-en { visibility: hidden; }
-.profile-name:focus-visible .profile-name-zh { visibility: visible; }
+.profile-name > span { grid-area: 1 / 1; align-self: center; animation: profile-name-switch 8s ease-in-out infinite; }
+.profile-name > .profile-name-zh { opacity: 0; font-family: "Songti SC", SimSun, serif; font-weight: 600; letter-spacing: 0.14em; animation-delay: -4s; }
+@keyframes profile-name-switch {
+  0%, 45% { opacity: 1; }
+  50%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .profile-role { margin: 0 0 4px; color: var(--ink); font: 500 14px / 1.8 var(--sans); }
 .profile-affiliation { margin: 0 0 13px; font: 13px / 1.8 var(--sans); }
 .profile-email { color: var(--muted); font: 12px / 1.7 "Cascadia Code", Consolas, monospace; }
@@ -67,9 +69,10 @@ h2 { margin: 0 0 23px; color: var(--ink); font: 400 31px / 1.2 var(--serif); let
 .colophon p { margin: 0; }
 .colophon a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); }
 
-@media (hover: hover) {
-  .profile-name:hover .profile-name-en { visibility: hidden; }
-  .profile-name:hover .profile-name-zh { visibility: visible; }
+@media (prefers-reduced-motion: reduce) {
+  .profile-name > span { animation: none; }
+  .profile-name-en { opacity: 1; }
+  .profile-name-zh { opacity: 0; }
 }
 
 @media (prefers-color-scheme: dark) {

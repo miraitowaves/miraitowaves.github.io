@@ -35,7 +35,7 @@
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
 
-    <link rel="stylesheet" href="./assets/css/custom.css?v=12">
+    <link rel="stylesheet" href="./assets/css/custom.css?v=13">
   </head>
   <body>
     <div class="masthead">
@@ -52,7 +52,7 @@
         <div class="image avatar"><img src="{{ site.avatar }}" alt="Portrait of {{ site.title | escape }}"></div>
         {% endif %}
 
-        <h1 class="profile-name" tabindex="0" aria-label="{{ site.title | escape }} / {{ site.name_zh | escape }}">
+        <h1 class="profile-name" aria-label="{{ site.title | escape }} / {{ site.name_zh | escape }}">
           <span class="profile-name-en" lang="en" aria-hidden="true">{{ site.title | escape }}</span>
           <span class="profile-name-zh" lang="zh-CN" aria-hidden="true">{{ site.name_zh | escape }}</span>
         </h1>
