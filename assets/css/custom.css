@@ -61,7 +61,7 @@ h2 { margin: 0 0 23px; color: var(--ink); font: 400 31px / 1.2 var(--serif); let
 .award-list { margin: 0; padding: 0; list-style: none; }
 .award-list li { position: relative; padding: 7px 0 7px 19px; font-size: 14.5px; line-height: 1.7; color: var(--ink); }
 .award-list li::before { content: ""; position: absolute; left: 0; top: 17px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); opacity: 0.65; }
-.award-year { margin-left: 0.3em; color: var(--muted); font-family: "Times New Roman", Cambria, Georgia, serif; font-size: 15px; line-height: inherit; font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
+.award-year { margin-left: 0.3em; color: var(--muted); font: inherit; white-space: nowrap; }
 .award-note { margin-left: 0.15em; color: var(--accent); font-style: italic; }
 .colophon { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; margin-top: 33px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font: 10px / 1.8 var(--sans); }
 .colophon p { margin: 0; }
