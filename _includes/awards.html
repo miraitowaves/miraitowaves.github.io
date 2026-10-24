@@ -5,7 +5,7 @@
 
   <ul class="award-list">
     {% for award in site.data.awards.main %}
-    <li>{% if award.link %}<a href="{{ award.link }}">{{ award.title | escape }}</a>{% else %}{{ award.title | escape }}{% endif %}{% if award.year %} <span class="award-year">({{ award.year }})</span>{% endif %}{% if award.note %} <span class="award-note">{{ award.note | escape }}</span>{% endif %}</li>
+    <li>{% if award.link %}<a href="{{ award.link }}">{{ award.title | escape }}</a>{% else %}{{ award.title | escape }}{% endif %}{% if award.year %}<span class="award-year">({{ award.year }})</span>{% endif %}{% if award.note %} <span class="award-note">{{ award.note | escape }}</span>{% endif %}</li>
     {% endfor %}
   </ul>
 </section>
