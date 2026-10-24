@@ -1,76 +1,113 @@
-/* ------------------------------------------------------------------
-   miraitowaves identity — deep-sea teal accent
-   Loaded after the theme stylesheets; overrides are intentionally
-   narrow (links, icon hover, selection) so the minimal-light
-   philosophy stays intact. To change the identity color, edit the
-   values in the two blocks below.
-   ------------------------------------------------------------------ */
+/* Coastal design for miraitowaves.github.io */
 
 :root {
-  --accent: #0e7490;                 /* deep-sea teal, light mode   */
-  --accent-strong: #155e75;          /* hover, light mode           */
-  --accent-ring: rgba(14, 116, 144, 0.35);  /* selection highlight  */
+  color-scheme: light dark;
+  --paper: #f7f8f5;
+  --ink: #243d46;
+  --body: #43545b;
+  --muted: #5e7378;
+  --line: #d7e1de;
+  --wash: #edf3f0;
+  --accent: #276777;
+  --accent-strong: #174c59;
+  --accent-ring: rgba(39, 103, 119, 0.17);
+  --serif: Georgia, "Times New Roman", "Songti SC", SimSun, serif;
+  --sans: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; background: var(--paper); color: var(--body); font-family: var(--serif); line-height: 1.82; -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); text-decoration: none; text-underline-offset: 4px; }
+a:hover { color: var(--accent-strong); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+::selection { background: var(--accent-ring); }
+
+.masthead, .layout { width: min(1080px, calc(100% - 80px)); margin-inline: auto; }
+.masthead { display: flex; justify-content: space-between; align-items: center; padding: 30px 0 21px; border-bottom: 1px solid var(--line); }
+.signature { display: flex; align-items: center; gap: 12px; color: var(--ink); font: 600 14px / 1 var(--sans); letter-spacing: 0.04em; }
+.signature svg { width: 34px; height: 17px; color: var(--accent); }
+.site-label { font: 10px / 1.5 var(--sans); letter-spacing: 0.2em; color: var(--muted); }
+.layout { display: grid; grid-template-columns: 244px minmax(0, 1fr); gap: 68px; padding-top: 48px; padding-bottom: 36px; }
+
+.profile { position: sticky; top: 40px; align-self: start; text-align: center; border-right: 1px solid var(--line); padding: 0 30px 32px 0; }
+.image.avatar { display: block; width: 144.4px; margin: 0 auto 13px; }
+.image.avatar img { display: block; width: 144.4px; padding: 20px; aspect-ratio: 1; object-fit: contain; clip-path: ellipse(40% 50%) content-box; }
+.profile-name { display: grid; width: fit-content; max-width: 100%; margin: 0 auto 20px; color: var(--ink); font: 400 27px / 1.4 var(--serif); letter-spacing: -0.04em; }
+.profile-name > span { grid-area: 1 / 1; align-self: center; }
+.profile-name-zh { visibility: hidden; font-family: "Songti SC", SimSun, serif; letter-spacing: 0.14em; }
+.profile-name:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.profile-name:focus-visible .profile-name-en { visibility: hidden; }
+.profile-name:focus-visible .profile-name-zh { visibility: visible; }
+.profile-role { margin: 0 0 4px; color: var(--ink); font: 500 14px / 1.8 var(--sans); }
+.profile-affiliation { margin: 0 0 13px; font: 13px / 1.8 var(--sans); }
+.profile-email { color: var(--muted); font: 12px / 1.7 "Cascadia Code", Consolas, monospace; }
+.profile-email:hover { color: var(--accent); }
+.profile-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 24px; font: 500 12px / 1.8 var(--sans); }
+.profile-links a { border-bottom: 1px solid var(--line); }
+.profile-links a:hover { border-color: var(--accent); }
+.profile-rule { width: 26px; height: 2px; margin: 34px auto 0; background: var(--accent); opacity: 0.45; }
+
+.content { min-width: 0; }
+.section-label { display: flex; align-items: center; gap: 12px; margin-bottom: 13px; color: var(--muted); font: 10px / 1.5 var(--sans); letter-spacing: 0.18em; }
+.section-label span:first-child { color: var(--accent); font-weight: 600; letter-spacing: 0; }
+.section-label::after { content: ""; flex: 1; height: 1px; margin-left: 4px; background: var(--line); }
+h2 { margin: 0 0 23px; color: var(--ink); font: 400 31px / 1.2 var(--serif); letter-spacing: -0.025em; }
+.bio > p { margin: 0 0 20px; font-size: 15.5px; }
+.bio a { text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--accent), transparent 66%); text-decoration-thickness: 1px; }
+.bio a:hover { text-decoration-color: var(--accent); }
+.awards { margin-top: 43px; }
+.awards h2 { font-size: 27px; margin-bottom: 10px; }
+.award-list { margin: 0; padding: 0; list-style: none; }
+.award-list li { position: relative; padding: 7px 0 7px 19px; font-size: 14.5px; line-height: 1.7; color: var(--ink); }
+.award-list li::before { content: ""; position: absolute; left: 0; top: 17px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); opacity: 0.65; }
+.award-note { margin-left: 0.15em; color: var(--accent); font: 500 12.5px / 1.7 var(--sans); }
+.colophon { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; margin-top: 33px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font: 10px / 1.8 var(--sans); }
+.colophon p { margin: 0; }
+.colophon a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); }
+
+@media (hover: hover) {
+  .profile-name:hover .profile-name-en { visibility: hidden; }
+  .profile-name:hover .profile-name-zh { visibility: visible; }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent: #4cc9dd;               /* brighter teal, dark mode    */
-    --accent-strong: #86e0ee;
-    --accent-ring: rgba(76, 201, 221, 0.40);
+    --paper: #14242b;
+    --ink: #e5eeeb;
+    --body: #c0cecf;
+    --muted: #93aaad;
+    --line: #30474e;
+    --wash: #1b3239;
+    --accent: #83bac3;
+    --accent-strong: #b4dce0;
+    --accent-ring: rgba(131, 186, 195, 0.22);
   }
 }
 
-/* Content links */
-a { color: var(--accent); }
-a:hover { color: var(--accent-strong); }
-
-/* Social / icon row hover picks up the identity color */
-.social-icons a:hover { color: var(--accent) !important; }
-
-/* Text selection */
-::selection { background: var(--accent-ring); }
-
-.image.avatar img {
-  aspect-ratio: 1;
-  object-fit: contain;
-  clip-path: ellipse(40% 50%) content-box;
+@media (max-width: 960px) {
+  .masthead, .layout { width: min(700px, calc(100% - 48px)); }
+  .layout { display: block; padding-top: 30px; }
+  .profile { position: static; border-right: 0; border-bottom: 1px solid var(--line); padding: 0 0 31px; margin-bottom: 34px; }
+  .profile-name { margin-bottom: 14px; }
+  .profile-rule { display: none; }
+  .profile-links { margin-top: 18px; }
+  .image.avatar { margin-bottom: 4px; }
 }
 
-.profile-name {
-  display: grid;
-  width: fit-content;
-  max-width: 100%;
-  margin-inline: auto;
-}
-
-.profile-name > span {
-  grid-area: 1 / 1;
-  align-self: center;
-}
-
-.profile-name-zh {
-  visibility: hidden;
-}
-
-.profile-name:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
-}
-
-.profile-name:focus-visible .profile-name-en {
-  visibility: hidden;
-}
-
-.profile-name:focus-visible .profile-name-zh {
-  visibility: visible;
-}
-
-@media (hover: hover) {
-  .profile-name:hover .profile-name-en {
-    visibility: hidden;
-  }
-
-  .profile-name:hover .profile-name-zh {
-    visibility: visible;
-  }
+@media (max-width: 480px) {
+  .masthead, .layout { width: calc(100% - 40px); }
+  .masthead { padding: 24px 0 18px; }
+  .signature { gap: 8px; font-size: 12px; }
+  .signature svg { width: 27px; }
+  .site-label { font-size: 8px; letter-spacing: 0.12em; }
+  .layout { padding-top: 20px; }
+  .image.avatar, .image.avatar img { width: 135px; }
+  .profile-name { font-size: 26px; }
+  .profile { padding-bottom: 27px; margin-bottom: 28px; }
+  h2 { font-size: 29px; }
+  .bio > p { font-size: 15px; line-height: 1.86; }
+  .awards { margin-top: 34px; }
+  .award-list li { padding-block: 6px; font-size: 14px; }
+  .colophon { display: block; }
 }

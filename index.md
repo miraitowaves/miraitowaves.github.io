@@ -2,8 +2,6 @@
 layout: homepage
 ---
 
-## A Short Bio
-
 I am an M.S. student in the [College of Computer Science and Technology](http://www.cs.zju.edu.cn/) at [Zhejiang University](https://www.zju.edu.cn/), advised by [Prof. Kun Kuang](https://kunkuang.github.io/). I received my B.Eng. degree from Zhejiang University in 2026, following my undergraduate studies from 2022 to 2026. My earlier research experience includes an internship at the DCD Lab, where I was fortunate to work under the guidance of Kun Kuang and [Prof. Fei Wu](https://person.zju.edu.cn/wufei).
 
 Since September 2026, I have been a research intern at [Alibaba Cloud (Aliyun)](https://www.alibabacloud.com/) in Hangzhou. Previously, I was a research intern at [Alimama](https://www.alimama.com/), [Taotian Group](https://talent.taotian.com/), in Beijing from March to September 2026.

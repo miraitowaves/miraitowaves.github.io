@@ -1,9 +1,12 @@
 {% if site.data.awards %}
-<h2>Selected Awards</h2>
+<section class="awards" aria-labelledby="awards-title">
+  <div class="section-label" aria-hidden="true"><span>02</span><span>RECOGNITION</span></div>
+  <h2 id="awards-title">Selected Awards</h2>
 
-<ul style="margin:0 0 5px;">
-  {% for award in site.data.awards.main %}
-  <li><a{% if award.link %} href="{{ award.link }}"{% endif %}><autocolor>{{ award.title }}</autocolor></a>{% if award.note %}<strong> <i style="color:#043361">{{ award.note }}</i></strong>{% endif %}</li>
-  {% endfor %}
-</ul>
+  <ul class="award-list">
+    {% for award in site.data.awards.main %}
+    <li>{% if award.link %}<a href="{{ award.link }}">{{ award.title | escape }}</a>{% else %}{{ award.title | escape }}{% endif %}{% if award.note %} <span class="award-note">{{ award.note | escape }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
 {% endif %}
